@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Trabalho Inteligencia de Negocios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- ---------------------------------texto CSS ------------------------------------------->
+  <style>
+    .row {
+      display: flex;
+      display: block;
+      text-align: center;
+    }
+/* ---------------------------------tabela CSS ------------------------------------------->*/
+.table{
+    width: 80%;
+    transform: translate(+15%, +10%);
+ }
+ /* ---------------------------------texto CSS ------------------------------------------->*/
+ .titulocurriculo{
+    text-align: center;
+ }
+ /* ---------------------------------texto CSS ------------------------------------------->*/  
+ .bottonselect{
+
+    top:15%;
+    text-align: center;
+ }
+ /*<!-- --------------------------------- CSS ------------------------------------------->*/
+ .footer{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        
+ }
+ 
+  </style>
+  
+</head>
+
+<body>
+  <!-- ---------------------------------navbar HTML parte soperior da pagina ------------------------------------------->
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <!-- <img src="ia.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    Trabalho Inteligencia de Negocios
+  </a>
+</nav>
+<!-- ---------------------------------texto titulo HTML ------------------------------------------->
+<div class="containerCurriculo">
+    <div class="titulo">
+      <div class="titulocurriculo">
+          <h1>Resultados</h1>
+      </div>
+    </div>
+<!-- --------------------------------------------------------------------------->
+    <div class="bottonselect">
+      <input type="text" class="form-control" name="number" id="number">
+    </div>
+    <div class="bottonselect">
+      <button class="button" onclick="calcula()">Calcular</button>
+    </div>
+    <!-- ---------------------------------texto HTML -------------------------------------------> 
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nivel</th>
+      <th scope="col">Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Linear</th>
+      <td id="l1">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 1</th>
+      <td id="p1">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 2</th>
+      <td id="p2">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 3</th>
+      <td id="p3">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 4</th>
+      <td id="p4">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 5</th>
+      <td id="p5">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 6</th>
+      <td id="p6">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 7</th>
+      <td id="p7">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 8</th>
+      <td id="p8">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 9</th>
+      <td id="p9">-</td>
+    </tr>
+    <tr>
+      <th scope="row">Polinomial 10</th>
+      <td id="p10">-</td>
+    </tr>
+  </tbody>
+</table>
+</table>
+</div>
+
+<!-- ---------------------------------footer HTML parte inferior da pagina------------------------------------------->
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  function calcula(){
+
+    var number = document.getElementById("number").value;
+
+
+    var number1 = number;
+    var number2 = number*number;
+    var number3 = number*number*number;
+    var number4 = number*number*number*number;
+    var number5 = number*number*number*number*number;
+    var number6 = number*number*number*number*number*number;
+    var number7 = number*number*number*number*number*number*number;
+    var number8 = number*number*number*number*number*number*number*number;
+    var number9 = number*number*number*number*number*number*number*number*number;
+    var number10 = number*number*number*number*number*number*number*number*number*number;
+
+    var l1= (2.32707509881423*number1)+(-4542.574111);
+    
+    var p1= (2.32707509881423*number1)+
+            (-4542.574111);
+
+    var p2= (-1084.02171089813*number1)+(0.270101637493024*(number2))+1087769.2457372;
+
+    var p3= (13425.04405*number1)+
+            (-6.944796539*(number2))+
+            (0.001195905549*(number3))+
+            (-8638014.505);
+
+    var p4= (-86070194.0548798*number1)+
+            (64203.2119726942*(number2))+
+            (-21.2852136055039*(number3))+
+            (0.00264624683160348*(number4))+
+            (43269299895.8168);
+
+    var p5= (5480137945.39255*number1)+
+            (-5471617.40124604*(number2))+
+            (2731.50440691406*(number3))+
+            (-0.681789183282259*(number4))+
+            (0.000068069157906398*(number5))+
+            (-2195427661464.42);
+
+    var p6= (7840814572362.93*number1)+
+            (-9746228728.50499*(number2))+
+            (6461138.1777474*(number3))+
+            (-2409.36318844995*(number4))+
+            (0.479173205842444*(number5))+
+            (-0.0000397072511891145*(number6))+
+            (-2628287148340633);
+
+    var p7= (7541116347529.33*number1)+
+            (-8102618247.34369*(number2))+
+            (4107412.99464403*(number3))+
+            (-745.936078451763*(number4))+
+            (-0.164198414873618*(number5))+
+            (0.0000913096513043261*(number6))+
+            (-0.0000000110384478659921*(number7))+
+            (-2772633488281904);
+            
+  
+    var p8 = (-180388840175.33*number1)+
+            (1305192499.19028*number2)+
+            (-1070131.26615448*number3)+
+            (-230.967359394059*number4)+
+            (0.74852055459406*number5)+
+            (-0.000423993836758598*number6)+
+            (0.000000104639509172103*number7)+
+            (-9.92302566512946E-12*number8)+
+            (-274079235085233);
+
+    var p9 = (14274327741616.2*number1)+
+            (-13432559636.7447*number2)+
+            (4878704.2204634*number3)+
+            (-307.323962845985*number4)+
+            (0.658166582393932*number5)+
+            (-0.00105187505682252*number6)+
+            (0.000000533015233952148*number7)+
+            (-0.00000000011962182144864*number8)+
+            (1.03100831780083E-14*number9)+
+            (-5553720536552816);
+
+    var p10 = (34379208796914.9*number1)+
+             (-31811982695.5022*number2)+
+             (10369064.8234056*number3)+
+             (1223.59326851559*number4)+
+             (-0.454745694040433*number5)+
+             (-0.000960934526819923*number6)+
+             (0.000000450270150150869*number7)+
+             (-9.18798732336378E-12*number8)+
+             (-2.76956923484053E-14*number9)+
+             (4.23093576301804E-18*number10)+
+            (-13423563973023256);
+
+
+
+
+            
+
+
+
+    
+
+
+    
+    
+
+    $("#l1").html(l1.toFixed(0).replace(".",","));
+    $("#p1").html(p1.toFixed(0).replace(".",","));
+    $("#p2").html(p2.toFixed(0).replace(".",","));
+    $("#p3").html(p3.toFixed(0).replace(".",","));
+    $("#p4").html(p4.toFixed(0).replace(".",","));
+    $("#p5").html(p5.toFixed(0).replace(".",","));
+    $("#p6").html(p6.toFixed(0).replace(".",","));
+    $("#p7").html(p7.toFixed(0).replace(".",","));
+    $("#p8").html(p8.toFixed(0).replace(".",","));
+    $("#p9").html(p9.toFixed(0).replace(".",","));
+    $("#p10").html(p10.toFixed(0).replace(".",","));
+
+
+
+    
+
+  }
+
+
+
+  </script>
+
+</html>
